@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmer Sports</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #222;
+            color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        nav {
+            width: 100%;
+            background-color: #333;
+            display: flex;
+            justify-content: flex-end;
+            padding: 15px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        nav button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #444;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        nav button:hover {
+            background-color: #555;
+        }
+
+        .content-container {
+            display: flex;
+            justify-content: space-between; 
+            width: 100%;
+            max-width: 1200px; 
+            margin-top: 50px;
+            gap: 20px; 
+        }
+
+        .content {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            width: 48%; 
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .sport-image {
+            width: 100%;
+            max-width: 300px; 
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .description {
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .game-images {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .game-images img {
+            width: 120px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #444;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <button onclick="window.location.href='Mainpage.html';">Home</button>
+        <button onclick="window.location.href='about.html';">About</button>
+        <button onclick="window.location.href='contact.html';">Contact</button>
+    </nav>
+
+    <div class="content-container">
+        
+        <div class="content">
+            <h1>Sports: Badminton</h1>
+            <img src="badminton.jpg" alt="Badminton" class="sport-image">
+            <div class="description">
+                <p>Badminton is a active and fun sport that helps improve reflexes, focus, and stamina.</p>
+                <p>It's easy to spend long hours sitting, but taking breaks to play badminton can get your body moving, reduce stress, and help you feel more focused when you get back to work.</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>E-Sports</h1>
+            <div class="description">
+                <p>E-Sports are an exciting and growing part of my lifestyle. Online games offer both entertainment and valuable skills.</p>
+                <p>I often enjoy these games as a way to unwind after my classes, connecting with fellow gamers.</p>
+            </div>
+
+            <h2>Popular E-Sports Games:</h2>
+            <ul class="description">
+                <li><strong>League of Legends</strong>: A fast-paced, team-based strategy game that tests players' coordination and decision-making skills.</li>
+                <li><strong>Crossfire</strong>: A first-person shooter game that enhances reflexes and teamwork while providing a competitive and exciting experience.</li>
+                <li><strong>Mobile Legends</strong>: A popular mobile multiplayer online battle arena (MOBA) game that brings strategy, coordination, and reflex-based gameplay to the palm of your hand.</li>
+            </ul>
+
+
+            <div class="game-images">
+                <img src="leagueoflegends.jpg" alt="League of Legends">
+                <img src="crossfire.jpg" alt="Crossfire">
+                <img src="mobilelegends.jpg" alt="Mobile Legends">
+            </div>
+        </div>
+    </div>
+
+    <button class="back-button" onclick="window.history.back();">Back</button>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        nav {
+            width: 100%;
+            background-color: #333;
+            display: flex;
+            justify-content: flex-end;
+            padding: 15px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #444;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        nav button:hover {
+            background-color: #555;
+        }
+
+        .contact-container {
+            margin-top: 100px; 
+            padding: 20px;
+            max-width: 600px;
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .contact-container h1 {
+            margin-bottom: 20px;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-links a {
+            display: inline-block;
+            width: 100%;
+            max-width: 250px;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background-color: #444;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .contact-links a:hover {
+            background-color: #555;
+            transform: scale(1.05);
+        }
+
+        .contact-links a img {
+            vertical-align: middle;
+            margin-right: 10px;
+            width: 30px; 
+            height: 30px; 
+            border-radius: 50%; 
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <button onclick="window.location.href='Mainpage.html';">Home</button>
+        <button onclick="window.location.href='about.html';">About</button>
+        <button onclick="window.location.href='contact.html';">Contact</button>
+    </nav>
+
+    <div class="contact-container">
+        <h1>Contact Me</h1>
+        <p>Feel free to connect with me on the following platforms:</p>
+        <div class="contact-links">
+            <a href="https://www.instagram.com/zkmdoz" target="_blank">
+                <img src="instagram.jpg" alt="Instagram" width="20"> zkmdoz
+            </a>
+            <a href="https://www.facebook.com/Angelynmarabillo28" target="_blank">
+                <img src="facebook.jpg" alt="Facebook" width="20"> Angelyn Marabillo
+            </a>
+            <a href="angelynmarabillo@gmail.com" target="_blank">
+                <img src="gmail.jpg" alt="Gmail" width="20"> angelynmarabillo
+            </a>
+            <a href="https://github.com/Angelynkm" target="_blank">
+                <img src="github.jpg" alt="GitHub" width="20"> Angelynkm
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
